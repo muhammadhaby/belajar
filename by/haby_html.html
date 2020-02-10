@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EBook Muhammad Haby</title>
+	<style type="text/css">
+		html, body {
+			padding: 0;
+			margin: 0;
+			font-family: Times New Roman;
+			background-image: url('31b1c5e28142f50e2aad73efaa2e63c1.jpg');
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		h1 {
+			color :black; 
+		}
+		.menu {
+			background-color: orange;
+		}
+		.menu ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+		.menu > ul > li {
+			float: left;
+		}
+		.menu li a {
+			display: inline-block;
+			color: black;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		.menu li a:hover{
+			background-color: white;
+		}
+		.kotakteks {
+		text-align: justify;
+		border:1px solid white;
+		margin: 8px;
+		width: 70%;
+		display: inline-block;
+		padding: 5px;
+	}
+	#kotak2{
+		display: none;
+	}
+	</style>
+</head>
+<body>
+	<header class="header">
+		<div class="menu">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="haby_html.html">HTML</a></li>
+				<li><a href="haby_css.html">CSS</a></li>
+				<li><a href="haby_javascript.html">Java Script</a></li>
+				<li><a href="haby_prodil.html">Profil</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<center>
+		<h1>About HTML</h1>
+		<div class="kotakteks">
+			<p><font face="georgia" color="black" size="4pt">Secara sederhana, halaman Web (atau dokumen HTML) adalah file teks biasa yang sudah ada dikodekan menggunakan Hypertext Markup Language (HTML) sehingga tampak diformat dengan baik di browser Web. Inilah yang dimaksud dengan HTML, kata demi kata: <br>
+			● Teks Hiperteks yang Anda klik untuk berpindah dari satu dokumen ke dokumen lainnya. Ini adalah referensi ke kemampuan halaman Web untuk saling terhubung satu sama lain. <br>
+			● Markup Tag yang menerapkan tata letak dan konvensi pemformatan ke teks biasa. Secara harfiah, teks biasa "ditandai" dengan tag. <br>
+			● Bahasa Referensi untuk fakta bahwa HTML dianggap sebagai bahasa pemrograman.</font></p> <span style="cursor: pointer;" onclick="muncul()"><b>Read more</b></span>
+		</div>
+		<div class="kotakteks" id="kotak2">
+			<p><font face="georgia" color="black" size="4pt">HTML umumnya diproduksi dan dikonsumsi sebagai dokumen. Kami mungkin berbicara tentang cuplikan HTML tetapi dalam kebanyakan kasus, situs web akan menanggapi permintaan dengan dokumen HTML lengkap, yang kemudian diuraikan oleh klien dan diberikan pada perangkat. Sebagai pengantar singkat tentang sintaks HTML, mari kita lihat dokumen HTML yang sangat sederhana. Listing 1-1 termasuk versi dokumen HTML Hello World.
+			&lt;!DOCTYPE html&gt;<br>
+			&lt;html lang="en"&gt;<br>
+			&lt;head&gt;<br>
+				&lt;meta charset="utf-8" /&gt;<br>
+				&lt;title&gt;HTML5 Sample Document&lt;/title&gt;<br>
+			&lt;/head&gt;<br>
+			&lt;body&gt;<br>
+				Hello World!<br>
+			&lt;/body&gt;<br>
+			&lt;/html&gt;<br>
+		</font></p>
+			
+		</div>
+
+</body>
+<script type="text/javascript">
+	
+	function muncul(){
+		document.getElementById('kotak2').style.display="inline-block";
+	}
+</script>
+</html>

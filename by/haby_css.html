@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EBook Muhammad Haby</title>
+	<style type="text/css">
+		html, body {
+			padding: 0;
+			margin: 0;
+			font-family: Times New Roman;
+			background-image: url('logo-css3.jpg');
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		h1 {
+			color :black; 
+		}
+		.menu {
+			background-color: skyblue;
+		}
+		.menu ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+		.menu > ul > li {
+			float: left;
+		}
+		.menu li a {
+			display: inline-block;
+			color: black;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		.menu li a:hover{
+			background-color: white;
+		}
+		.kotakteks {
+		text-align: justify;
+		border:1px solid white;
+		margin: 8px;
+		width: 70%;
+		display: inline-block;
+		padding: 5px;
+	}
+	#kotak2{
+		display: none;
+	}
+	</style>
+</head>
+<body>
+	<header class="header">
+		<div class="menu">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="haby_html.html"haby_html.html>HTML</a></li>
+				<li><a href="haby_css.html">CSS</a></li>
+				<li><a href="haby_javascript.html">Java Script</a></li>
+				<li><a href="haby_prodil.html">Profil</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<br/>
+	<center>
+		<h1>Cascading Style Sheets</h1>
+		<div class="kotakteks">
+			<p><font face="georgia" color="black" size="4pt">Cascading Style Sheets, yang akrab disebut sebagai CSS, adalah bahasa desain sederhana yang dimaksudkan untuk menyederhanakan proses pembuatan halaman web yang layak. CSS menangani tampilan dan nuansa bagian dari halaman web. Dengan menggunakan CSS, Anda dapat mengontrol warna teks, gaya font, jarak antar paragraf, bagaimana ukuran kolom dan tata letak, gambar latar atau warna apa yang digunakan, serta berbagai efek lainnya. CSS mudah dipelajari dan dipahami tetapi memberikan kontrol yang kuat atas penyajian dokumen HTML. Paling umum, CSS dikombinasikan dengan bahasa markup HTML atau XHTML.</font></p> <span style="cursor: pointer;" onclick="muncul()"><b>Read more</b></span>
+		</div>
+	<div class="kotakteks" id="kotak2">
+		<p><font face="georgia" color="black" size="4pt">CSS terdiri dari aturan gaya yang ditafsirkan oleh browser dan kemudian diterapkan ke elemen yang sesuai dalam dokumen Anda. Aturan gaya dibuat dari tiga bagian:<br>
+			1. Selector: Selector adalah tag HTML di mana gaya akan diterapkan. Ini bisa berupa tag seperti h1 atau table dll.<br>
+			2. Properti: Properti adalah jenis atribut dari tag HTML. Sederhananya, semua atribut HTML dikonversi menjadi properti CSS. Bisa warna, batas, dll.<br>
+			3. Nilai: Nilai ditugaskan ke properti. Misalnya, properti warna dapat memiliki nilai merah atau # F1F1F1 dll.<br><br>
+			Anda dapat menempatkan Sintaks Aturan Gaya CSS sebagai berikut:<br><br>
+			<font color="white" style="background: black; border : 1px solid black; padding: 3px">selector { property : value}</font><br><br>
+			Contoh: Anda dapat mendefinisikan batas tabel sebagai berikut:<br><br>
+			<font color="white" style="background: black; border : 1px solid black; padding: 3px">table{ border :1px solid #C00; }</font><br><br>
+			Di sini tabel adalah pemilih dan perbatasan adalah properti dan nilai yang diberikan 1px solid # C00 adalah nilai properti itu.
+			Anda dapat menentukan penyeleksi dengan berbagai cara sederhana berdasarkan kenyamanan Anda. Biarkan saya meletakkan penyeleksi ini satu per satu.<br>
+
+			<h2><b><u>The Type Selectors</u></b></h2><br>
+			Ini adalah pemilih yang sama yang telah kita lihat di atas. Sekali lagi, satu contoh lagi untuk memberi warna pada semua judul level 1:<br><br>
+			<font color="white" style="background: black; border : 1px solid black; padding: 3px">
+				h1 {<br>
+				color: #36CFFF;<br>
+				}</font><br><br>
+
+			<h4><b><u>The Universal Selectors</u></b></h4><br>
+			Daripada memilih elemen jenis tertentu, pemilih universal cukup cocok dengan nama jenis elemen apa pun:<br><br>
+			<font color="white" style="background: black; border : 1px solid black; padding: 3px">
+				* {<br>
+			color: #000000;<br>
+			}</font><br><br>
+
+			<h4><b><u>The Class Selectors</u></b></h4><br>
+			Anda bisa mendefinisikan aturan gaya berdasarkan atribut kelas elemen. Semua elemen yang memiliki kelas itu akan diformat sesuai dengan aturan yang ditetapkan.<br><br>
+			<font color="white" style="background: black; border : 1px solid black; padding: 3px">
+				.black { <br>
+				color: #000000;<br>
+				}</font><br><br>
+
+			<h4><b><u>The ID Selectors</u></b></h4><br>
+			Anda bisa mendefinisikan aturan gaya berdasarkan atribut id elemen. Semua elemen yang memiliki id itu akan diformat sesuai dengan aturan yang ditentukan.<br><br>
+			<font color="white" style="background: black; border : 1px solid black; padding: 3px">
+			#black { <br>
+			color: #000000;<br>
+				}</font><br><br>
+
+
+			
+		</font></p>
+	</div>
+</center>
+ <marquee><h4><font color="white">Copyright&copy Muhammad Haby</font></h4></marquee>
+</body>
+<script type="text/javascript">
+	
+	function muncul(){
+		document.getElementById('kotak2').style.display="inline-block";
+	}
+</script>
+</html>

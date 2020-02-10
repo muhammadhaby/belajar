@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EBook Muhammad Haby</title>
+	<style type="text/css">
+		html, body {
+			padding: 0;
+			margin: 0;
+			font-family: Times New Roman;
+			background-image: url('javascript_wallpaper_by_mrhudson_db8gw2e-fullview.jpg');
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		h1 {
+			color :white; 
+		}
+		.menu {
+			background-color: #ffff66;
+		}
+		.menu ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+		.menu > ul > li {
+			float: left;
+		}
+		.menu li a {
+			display: inline-block;
+			color: black;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		.menu li a:hover{
+			background-color: white;
+		}
+		.kotakteks {
+		text-align: justify;
+		border:1px solid white;
+		margin: 8px;
+		width: 70%;
+		display: inline-block;
+		padding: 5px;
+	}
+	#kotak2{
+		display: none;
+	}
+	</style>
+</head>
+<body>
+	<header class="header">
+		<div class="menu">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="haby_html.html">HTML</a></li>
+				<li><a href="haby_css.html">CSS</a></li>
+				<li><a href="haby_javascript.html">Java Script</a></li>
+				<li><a href="haby_profil.html">Profil</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<br/>
+	<center>
+		<h1>Java Script</h1>
+		<div class="kotakteks">
+			<p><font face="georgia" color="white" size="4pt">Javascript adalah bahasa pemrograman komputer yang dinamis. Ini ringan dan paling umum digunakan sebagai bagian dari halaman web, yang implementasinya memungkinkan skrip sisi klien untuk berinteraksi dengan pengguna dan membuat halaman dinamis. Ini adalah bahasa pemrograman yang ditafsirkan dengan kemampuan berorientasi objek.
+			JavaScript pertama kali dikenal sebagai LiveScript, tetapi Netscape mengubah namanya menjadi JavaScript, mungkin karena kegembiraan yang dihasilkan oleh Java. JavaScript membuat penampilan pertamanya di Netscape 2.0 pada tahun 1995 dengan nama LiveScript. Inti tujuan umum dari bahasa ini telah tertanam di Netscape, Internet Explorer, dan browser web lainnya.
+			</font></p> <span style="cursor: pointer;" onclick="muncul()"><b>Read more</b></span>
+		</div>
+		<div class="kotakteks" id="kotak2">
+			<h1>Java Script Syntax</h1>
+			<p><font face="georgia" color="white" size="4pt">JavaScript dapat diimplementasikan menggunakan pernyataan JavaScript yang ditempatkan di dalam tag HTML &lt;script&gt;....&lt;/script&gt; di halaman web.Anda dapat menempatkan tag &lt;script&gt;, yang berisi JavaScript Anda, di mana saja di dalam halaman web Anda, tetapi biasanya Anda disarankan untuk menyimpannya di dalam tag &lt;head&gt;.Tag &lt;script&gt; memberitahu program browser untuk mulai menafsirkan semua teks di antara tag-tag ini sebagai sebuah skrip. Sintaks sederhana dari JavaScript Anda akan muncul sebagai berikut.<br><br>
+			<font color="white" style="background: black; border : 1px solid black; padding: 3px">
+				&lt;script&gt;<br>
+				JavaScript code<br>	
+				&lt;/script &gt;<br>
+				</font>
+			</font></p>
+
+
+			
+		</div>
+	</center>
+	 <marquee><h4><font color="white">Copyright&copy Muhammad Haby</font></h4></marquee>
+</body>
+<script type="text/javascript">
+	
+	function muncul(){
+		document.getElementById('kotak2').style.display="inline-block";
+	}
+</script>
+</html>
